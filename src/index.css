@@ -1,0 +1,63 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    background-color: #080d19;
+    color: #f8fafc;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: 'Space Grotesk', sans-serif;
+    letter-spacing: -0.02em;
+  }
+}
+
+/* Subtle futuristic architectural grid */
+.bg-tech-grid {
+  background-image:
+    linear-gradient(to right, rgba(56, 189, 248, 0.05) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(56, 189, 248, 0.05) 1px, transparent 1px);
+  background-size: 56px 56px;
+}
+
+.glass-panel {
+  background: linear-gradient(145deg, rgba(20, 43, 73, 0.36) 0%, rgba(8, 13, 25, 0.78) 100%);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(248, 250, 252, 0.09);
+}
+
+.glass-panel-hover {
+  transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.glass-panel-hover:hover {
+  border-color: rgba(56, 189, 248, 0.42);
+  box-shadow: 0 20px 50px -20px rgba(56, 189, 248, 0.25);
+}
+
+/* Custom subtle scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #080d19;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #142b49;
+  border-radius: 9999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #38bdf8;
+}
